@@ -5,8 +5,7 @@ local server = syn.request({
     Method = "GET"
 })
 
-function sp()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/DNAXD/eee/main/cerro%20hub%20shit%20ui-obfuscated.lua"))();
+local sp() = loadstring(game:HttpGet("https://raw.githubusercontent.com/DNAXD/eee/main/cerro%20hub%20shit%20ui-obfuscated.lua"))();
 end
 local decode = syn.crypt.base64.decode(server.Body)
 
