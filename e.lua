@@ -5,7 +5,8 @@ local server = syn.request({
     Method = "GET"
 })
 
-local sp() = loadstring(game:HttpGet("https://raw.githubusercontent.com/DNAXD/eee/main/cerro%20hub%20shit%20ui-obfuscated.lua"))();
+function e()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DNAXD/eee/main/cerro%20hub%20shit%20ui-obfuscated.lua"))();
 end
 local decode = syn.crypt.base64.decode(server.Body)
 
@@ -26,5 +27,5 @@ elseif decode == "Invalid HWID" then
 elseif decode == "You Are Got Blacklist" then
     game.Players.LocalPlayer:Kick("\n\nYou Are Got Blacklist\n")
 elseif decode == "Whitelist" then
-    sp()
+    e()
 end
